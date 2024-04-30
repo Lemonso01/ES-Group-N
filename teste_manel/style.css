@@ -89,18 +89,31 @@ body, h1, p, a {
 .main_text{
     position: relative;
     top: 20px;
-    left: px;
-    overflow: hidden; /* Hide any overflowing content */
+    left: 0px;
+    overflow: hidden;
 }
 
 .main_text h1{
     font-size: 300%;
     color: #FFDC21;
-    /* text-shadow: #FC0 1px 0 3px; */
 }
 
 .main_text p{
     padding: 0px 0px;
     font-size: 110%;
     color: #d3d2d2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
