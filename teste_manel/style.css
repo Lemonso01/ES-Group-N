@@ -22,7 +22,7 @@ body, h1, p, a {
 
 .navbar {
     width: 85%;
-    margin: auto;
+    margin:auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@ body, h1, p, a {
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -87,31 +87,52 @@ body, h1, p, a {
 }
 
 .main_text{
-    position: relative;
+    position: absolute;
     top: 20px;
-    left: 0px;
-    overflow: hidden;
+    left: -120px;
+    overflow: -moz-hidden-unscrollable;
 }
 
 .main_text h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 10%;
+    left: 50%;
     font-size: 300%;
-    color: #FFDC21;
+    color: #dcbd22;
+    position: relative;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 .main_text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 50%;
+    left: 50%;
     padding: 0px 0px;
     font-size: 110%;
     color: #d3d2d2;
+    position: relative;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 button {
-    padding: 10px 20px;
+    top: 60%;
+    left: 5%;
+    padding: 15px 30px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    position: absolute;
 }
 
 button:hover {
