@@ -20,6 +20,7 @@ body, h1, p, a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/buoy_background_2.webp);
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
 }
 
 /* Navbar */
@@ -198,7 +199,7 @@ tbody tr {
     flex: 1;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
-    background-color: #007BFF;
+    background-color: rgba(0, 123, 255, 0.6);
     color: white;
     border: none;
     border-radius: 5px;
@@ -208,5 +209,5 @@ tbody tr {
 }
 
 .btn-home:hover {
-    background-color: #0056b3;
+    background-color: rgba(0, 86, 179, 1);
 }

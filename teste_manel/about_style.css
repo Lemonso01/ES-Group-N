@@ -20,6 +20,7 @@ body, h1, p, a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/buoy_background_2.webp);
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
 }
 
 /* Navbar */
