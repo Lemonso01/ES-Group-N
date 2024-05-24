@@ -110,7 +110,7 @@ body, h1, p, a {
     top: 10%;
     left: 50%;
     font-size: 300%;
-    color: #dcbd22;
+    color: rgb(220, 189, 34);
     position: relative;
     text-shadow:
     -1px -1px 0 #000,
@@ -135,30 +135,69 @@ body, h1, p, a {
 }
 
 /* Container for the about section */
-.about-title {
-    top: 10%;
+.table-box {
+    top: 0%;
     width: 60%;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 8px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Title styling */
-.about-title h1 {
-    text-align: center;
-    color: #333;
+h1 {
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
-.about-textbox p {
-    margin: auto auto 10px; /* Add some space between paragraphs */
-    color: #555;
-    line-height: 1.6;
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chart {
+    width: 45%;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.button-box {
+    top: 800px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    gap: 200px; /* Adjust the gap as needed */
+}
+
+/* Button Graphs */
+.btn-home {
+    flex: 1;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
 }

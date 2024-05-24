@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphs Overview</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Oceanographic Buoy for Multidomain Research - Home</title>
+    <link rel="stylesheet" href="graphs_style.css">
 </head>
 <body>
 
   <div class="banner">
     <div class="navbar">
-      <img src="Images/logo.png" class="logo" alt="Logo">
+      <img src="Images/feup_logo.png" class="logo" alt="Logo">
         <ul>
             <li><a href="main.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,30 +19,48 @@
     </div>
 
     <div class="main_text">
-      <h1>Graphs Overview</h1>
-      <!-- Graph 1 -->
-      <div class="graph">
-          <img src="Images/graph.png" alt="Graph 1">
-          <p>Description of Graph 1</p>
-      </div>
-      <!-- Graph 2 -->
-      <div class="graph">
-          <img src="graph2.jpg" alt="Graph 2">
-          <p>Description of Graph 2</p>
+      <h1>Oceanographic Buoy</h1>
+      <p>for Multidomain Research</p>
+    </div>
+
+
+    <div class="graph-box">
+      <h1>Sensor Data - Last 24 Hours</h1>
+      <div class="charts-container">
+          <div class="chart">
+              <canvas id="temperatureChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="waterTemperatureChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="humidityChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="waveHeightChart"></canvas>
+          </div>
       </div>
     </div>
+
+    <div class="button-box">    
+      <div class="back_button">
+        <button class="btn btn-home" onclick="window.location.href='main.html'">Back</button>
+      </div>
+    </div>
+    
 
     <div class="footer">
       <div class="f_navbar">
         <ul>
-            <li><a href="cookies.html">Política de Cookies</a></li>
-            <li><a href="privacidade.html">Política de Privacidade</a></li>
-            <li><a href="termos_condicoes.html">Termos e Condições</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="privacidade.html">Privacy</a></li>
+            <li><a href="termos_condicoes.html">Terms & Conditions</a></li>
         </ul>
       </div>
       <p>&copy; 2024 FEUP - [ES] - Grupo N. All rights reserved.</p>  
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ body, h1, p, a {
 }
 
 .logo {
-    width: 100px;
+    width: 210px;
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ body, h1, p, a {
 .main_text{
     position: absolute;
     top: 20px;
-    left: -120px;
+    left: 200px;
     overflow: -moz-hidden-unscrollable;
 }
 
@@ -185,10 +185,11 @@ tbody tr {
 
 
 .button-box {
-    top: 25%;
+    top: 800px;
+    left: 50%;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: fixed;
     gap: 200px; /* Adjust the gap as needed */
 }
 
@@ -203,7 +204,7 @@ tbody tr {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    position: absolute;
+    position: relative;
 }
 
 .btn-home:hover {
