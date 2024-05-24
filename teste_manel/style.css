@@ -110,7 +110,7 @@ body, h1, p, a {
     top: 10%;
     left: 50%;
     font-size: 300%;
-    color: #dcbd22;
+    color: rgb(220, 189, 34);
     position: relative;
     text-shadow:
     -1px -1px 0 #000,
@@ -134,10 +134,67 @@ body, h1, p, a {
     1px 1px 0 #000;
 }
 
+/* Container for the about section */
+.table-box {
+    top: 0%;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    border: 1px solid black; /* Apply a solid border to the table */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Header row styles */
+thead th {
+    background-color: #2552ce;
+    color: rgb(255, 255, 255);
+}
+
+tbody tr {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+
+.button-box {
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 200px; /* Adjust the gap as needed */
+}
+
 /* Button Graphs */
 .btn-graph {
-    top: 82%;
-    left: 50%;
+    flex: 1;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
     background-color: #007BFF;
@@ -154,9 +211,8 @@ body, h1, p, a {
 }
 
 /* Button Graphs */
-.btn-protected {
-    top: 25%;
-    left: 10%;
+.btn-history {
+    flex: 1;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
     background-color: #007BFF;
@@ -168,6 +224,6 @@ body, h1, p, a {
     position: absolute;
 }
 
-.btn-protected:hover {
+.btn-history:hover {
     background-color: #0056b3;
 }
