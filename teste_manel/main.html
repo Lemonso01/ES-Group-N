@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website - Home</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
 </head>
 <body>
 
   <div class="banner">
     <div class="navbar">
-      <img src="" class="logo">
+      <img src="Images/logo.png" class="logo" alt="Logo">
         <ul>
             <li><a href="main.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Access</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="protected_page.html">Access</a></li>
         </ul>
     </div>
 
     <div class="main_text">
       <h1>Oceanographic Buoy</h1>
       <p>for Multidomain Research</p>
-      
     </div>
 
     <div class="graph_button">
-      <button onclick="window.location.href='graphs.html'">View Graphs</button>
+      <button class="btn btn-graph" onclick="window.location.href='graphs.html'">View Graphs</button>
     </div>
+
+    
+    <div class="password_protected">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button class="btn btn-protected" onclick="checkPassword()">Access Protected Page</button>
+    </div>
+    
 
     <div class="footer">
       <div class="f_navbar">
@@ -42,5 +46,6 @@
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
