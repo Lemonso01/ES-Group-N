@@ -1,0 +1,151 @@
+/* Body and Typography */
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/buoy_background_2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+}
+
+.logo {
+    width: 210px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #d3d2d2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #dcbd22;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(35, 41, 61, 0.9);
+    text-align: center;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.f_navbar ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.f_navbar ul li{
+    margin: 0 10px;
+}
+
+.f_navbar ul li a{
+    text-decoration: none;
+}
+
+/* Main Text */
+.main_text{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    overflow: -moz-hidden-unscrollable;
+}
+
+.main_text h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 10%;
+    left: 50%;
+    font-size: 300%;
+    color: rgb(220, 189, 34);
+    position: relative;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.main_text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 50%;
+    left: 50%;
+    padding: 0px 0px;
+    font-size: 110%;
+    color: #d3d2d2;
+    position: relative;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Container for the about section */
+.table-box {
+    top: 0%;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
