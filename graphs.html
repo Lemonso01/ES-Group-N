@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanographic Buoy for Multidomain Research - Home</title>
+    <link rel="stylesheet" href="graphs_style.css">~
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+      <img src="Images/feup_logo.png" class="logo" alt="Logo">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="access.html">Access</a></li>
+        </ul>
+    </div>
+
+    <div class="main_text">
+      <h1>Oceanographic Buoy</h1>
+      <p>for Multidomain Research</p>
+    </div>
+
+
+    <div class="graph-box">
+      <h1>Sensor Data - Last 24 Hours</h1>
+      <div class="charts-container">
+          <div class="chart">
+              <canvas id="temperatureChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="waterTemperatureChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="humidityChart"></canvas>
+          </div>
+          <div class="chart">
+              <canvas id="waveHeightChart"></canvas>
+          </div>
+      </div>
+    </div>
+
+    <div class="button-box">    
+      <div class="back_button">
+        <button class="btn btn-home" onclick="window.location.href='main.html'">Back</button>
+      </div>
+    </div>
+    
+
+    <div class="footer">
+      <div class="f_navbar">
+        <ul>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="privacidade.html">Privacy</a></li>
+            <li><a href="termos_condicoes.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2024 FEUP - [ES] - Grupo N. All rights reserved.</p>  
+    </div>
+  </div>
+
+  <script src="test_graphs.js"></script>
+</body>
+</html>
