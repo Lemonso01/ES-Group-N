@@ -132,6 +132,7 @@ table {
 .table-box h1 {
     text-align: center;
     color: #ffffff;
+    margin: 20px;
     text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,

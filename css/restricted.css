@@ -107,6 +107,82 @@ body{
     position: relative;
 }
 
+/* Container for the about section */
+.table-box {
+    top: 0%;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    border: 1px solid black; /* Apply a solid border to the table */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-box h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Header row styles */
+thead th {
+    background-color: #2552ce;
+    color: rgb(255, 255, 255);
+}
+
+tbody tr {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+.button-box {
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%; /* Set left to 50% */
+    transform: translateX(-50%);
+    gap: 100px;
+}
+
+.btn-graph{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: rgba(0, 123, 255, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-graph:hover{
+    background-color: rgba(0, 86, 179, 1);
+}
+
 /* Footer */
 .footer {
     background-color: rgba(35, 41, 61, 0.9);
@@ -130,55 +206,4 @@ body{
 
 .f_navbar ul li a{
     text-decoration: none;
-}
-
-/* Login Form */
-.login-container {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: rgb(220, 189, 34);
-    text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-.login-container label {
-    display: block;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.login-container input {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(220, 189, 34);
-    color: #000000;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.login-container button:hover {
-    background-color: #c1a218;
-}
-
-#login-form p {
-    display: none;
-    color: red;
 }
