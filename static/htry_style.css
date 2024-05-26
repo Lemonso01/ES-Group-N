@@ -36,9 +36,10 @@ body, h1, p, a {
 
 .logo {
     width: 210px;
-    cursor: pointer;
+    padding: 15px 0px;
+    transform: scale(0.7);
+    transform-origin: top left;
 }
-
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -78,7 +79,7 @@ body, h1, p, a {
     background-color: rgba(35, 41, 61, 0.9);
     text-align: center;
     padding: 10px 0px;
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
@@ -100,19 +101,12 @@ body, h1, p, a {
 
 /* Main Text */
 .main_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     top: 20px;
-    left: 200px;
+    left: -15px;
     overflow: -moz-hidden-unscrollable;
-}
-
-.main_text h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    top: 10%;
-    left: 50%;
-    font-size: 300%;
-    color: rgb(220, 189, 34);
-    position: relative;
+    cursor: default;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -120,19 +114,21 @@ body, h1, p, a {
     1px 1px 0 #000;
 }
 
+.main_text h1{
+    top: 10%;
+    left: 50%;
+    font-size: 300%;
+    color: rgb(220, 189, 34);
+    position: relative;
+}
+
 .main_text p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     top: 50%;
     left: 50%;
     padding: 0px 0px;
     font-size: 110%;
     color: #d3d2d2;
     position: relative;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 
 /* Container for the about section */
