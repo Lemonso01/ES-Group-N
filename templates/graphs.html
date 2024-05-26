@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oceanographic Buoy for Multidomain Research - Graphs</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='graphs_style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -44,7 +44,7 @@
 
     <div class="button-box">    
       <div class="back_button">
-        <button class="btn btn-home" onclick="window.location.href='main'">Back</button>
+        <button class="btn btn-home" onclick="window.location.href='{{ url_for('main') }}'">Back to Main</button>
       </div>
     </div>
     
