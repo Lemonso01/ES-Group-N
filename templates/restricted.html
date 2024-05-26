@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanographic Buoy for Multidomain Research - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_restricted.css') }}">
+</head>
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+      <img src="{{ url_for('static', filename='Images/feup_logo.png') }}" class="logo" alt="Logo">
+        <ul>
+            <li><a href="{{ url_for('main') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('access') }}">Access</a></li>
+        </ul>
+    </div>
+
+    <div class="main_text">
+      <h1>Oceanographic Buoy</h1>
+      <p>for Multidomain Research</p>
+    </div>
+
+    <div class="table-box">
+      <h2>All time data</h2>
+      <table id="data-table">
+          <thead>
+              <tr>
+                  <th>Pressão</th>
+                  <th>Humidade</th>
+                  <th>Temperatura Interna</th>
+                  <th>Temperatura da água</th>
+                  <th>Água</th>
+                  <th>Tempo</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Data will be inserted here by JavaScript -->
+          </tbody>
+      </table>
+    </div>
+
+    <div class="warning" id="water-level-warning" style="display: none; color: red; text-align: center;">
+      Water level is high! Please take necessary precautions.
+    </div>
+    
+    <div class="footer">
+      <div class="f_navbar">
+        <ul>
+            <li><a href="{{ url_for('cookies') }}">Cookies</a></li>
+            <li><a href="{{ url_for('privacy') }}">Privacy</a></li>
+            <li><a href="{{ url_for('terms') }}">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2024 FEUP - [ES] - Grupo N. All rights reserved.</p>  
+    </div>
+  </div>
+
+  <script>
+    async function fetchData() {
+      const response = await fetch('/data');
+      if (response.ok) {
+        const data = await response.json();
+        
+        const tbody = document.querySelector('#data-table tbody');
+        tbody.innerHTML = '';
+
+        let waterLevelHigh = false; // Flag to track if water level is high
+
+        data.forEach(row => {
+          const tr = document.createElement('tr');
+          const keys = ['pressao', 'humidade', 'temp_interna', 'temp_agua', 'agua', 'time_stamp']; // Define column order
+          keys.forEach(key => {
+            const td = document.createElement('td');
+            td.textContent = row[key];
+            tr.appendChild(td);
+          });
+
+          if (row['agua'] >= 1) { // Check if water level is 1 or higher
+            waterLevelHigh = true;
+          }
+
+          tbody.appendChild(tr);
+        });
+
+        // Display warning if water level is high
+        if (waterLevelHigh) {
+          document.getElementById('water-level-warning').style.display = 'block';
+        }
+      } else {
+        console.error('Failed to fetch data:', await response.text());
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchData);
+  </script>
+
+</body>
+</html>

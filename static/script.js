@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const validPassword = "es-n-2024";
 
         if (username === validUsername && password === validPassword) {
-            window.location.href = "restricted.html"; // Redirect to restricted page
+            window.location.href = "restricted"; // Redirect to restricted page
         } else {
             errorMessage.style.display = "block";
         }

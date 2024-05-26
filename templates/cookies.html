@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oceanographic Buoy for Multidomain Research - Home</title>
-    <link rel="stylesheet" href="cookies.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cookies.css') }}">
 </head>
 <body>
 
     <div class="navbar">
-      <img src="Images/feup_logo.png" class="logo" alt="Logo">
+      <img src="{{ url_for('static', filename='Images/feup_logo.png') }}" class="logo" alt="Logo">
         <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="access.html">Access</a></li>
+            <li><a href="{{ url_for('main') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('access') }}">Access</a></li>
         </ul>
     </div>
 
@@ -24,16 +24,16 @@
 
     <div class="video-container">
         <video autoplay muted loop class="background-video">
-            <source src="Images/COOKIES.mp4" type="video/mp4">
+            <source src="{{ url_for('static', filename='Images/COOKIES.mp4') }}" type="video/mp4">
         </video>
     </div>
 
     <div class="footer">
       <div class="f_navbar">
         <ul>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="{{ url_for('cookies') }}">Cookies</a></li>
+            <li><a href="{{ url_for('privacy') }}">Privacy</a></li>
+            <li><a href="{{ url_for('terms') }}">Terms & Conditions</a></li>
         </ul>
       </div>
       <p>&copy; 2024 FEUP - [ES] - Grupo N. All rights reserved.</p>  

@@ -20,7 +20,7 @@ body, h1, p, a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/buoy_background_2.webp);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /* Navbar */
@@ -148,8 +148,16 @@ body, h1, p, a {
     margin-right: auto;
 }
 
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove spacing between cells */
+    border: 1px solid black; /* Apply a solid border to the table */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 h1 {
-    margin-bottom: 20px;
     text-align: center;
     color: #ffffff;
     text-shadow:
@@ -159,21 +167,21 @@ h1 {
     2px 2px 0 #000;
 }
 
-.charts-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 100px;
+th, td {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
 }
 
-.chart {
-    width: 45%;
-    min-width: 300px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Header row styles */
+thead th {
+    background-color: #2552ce;
+    color: rgb(255, 255, 255);
+}
+
+tbody tr {
+    background-color: #dddddd;
+    color: #000000;
 }
 
 
