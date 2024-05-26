@@ -17,7 +17,7 @@ body, h1, p, a {
 .banner {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/buoy_background_2.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/buoy_background_2.webp);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -25,7 +25,7 @@ body, h1, p, a {
 
 /* Navbar */
 .navbar {
-    width: 95%;
+    width: 85%;
     margin:auto;
     padding: 35px 0;
     display: flex;
@@ -36,9 +36,7 @@ body, h1, p, a {
 
 .logo {
     width: 210px;
-    padding: 15px 0px;
-    transform: scale(0.7);
-    transform-origin: top left;
+    cursor: pointer;
 }
 
 .navbar ul li{
@@ -53,7 +51,6 @@ body, h1, p, a {
     text-transform: uppercase;
     color: #d3d2d2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 120%;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -74,38 +71,6 @@ body, h1, p, a {
 
 .navbar ul li:hover::after{
     width: 100%;
-}
-
-/* Main Text */
-.main_text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 20px;
-    left: -15px;
-    overflow: -moz-hidden-unscrollable;
-    cursor: default;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
-.main_text h1{
-    top: 10%;
-    left: 50%;
-    font-size: 300%;
-    color: rgb(220, 189, 34);
-    position: relative;
-}
-
-.main_text p{
-    top: 50%;
-    left: 50%;
-    padding: 0px 0px;
-    font-size: 110%;
-    color: #d3d2d2;
-    position: relative;
 }
 
 /* Footer */
@@ -133,6 +98,43 @@ body, h1, p, a {
     text-decoration: none;
 }
 
+/* Main Text */
+.main_text{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    overflow: -moz-hidden-unscrollable;
+}
+
+.main_text h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 10%;
+    left: 50%;
+    font-size: 300%;
+    color: rgb(220, 189, 34);
+    position: relative;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.main_text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 50%;
+    left: 50%;
+    padding: 0px 0px;
+    font-size: 110%;
+    color: #d3d2d2;
+    position: relative;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 /* Container for the about section */
 .table-box {
     top: 0%;
@@ -155,7 +157,7 @@ table {
     overflow: hidden;
 }
 
-.table-box h1 {
+h1 {
     text-align: center;
     color: #ffffff;
     text-shadow:
@@ -185,32 +187,15 @@ tbody tr {
 
 .button-box {
     top: 800px;
-    left: 43.5%;
+    left: 50%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    gap: 100px; /* Adjust the gap as needed */
+    position: fixed;
+    gap: 200px; /* Adjust the gap as needed */
 }
 
 /* Button Graphs */
-.btn-graph {
-    flex: 1;
-    transform: translate(-50%, -50%);
-    padding: 15px 30px;
-    background-color: rgba(0, 123, 255, 0.6);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    position: relative;
-}
-
-.btn-graph:hover {
-    background-color: rgba(0, 86, 179, 1);
-}
-
-/* Button Graphs */
-.btn-history {
+.btn-home {
     flex: 1;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
@@ -223,6 +208,6 @@ tbody tr {
     position: relative;
 }
 
-.btn-history:hover {
+.btn-home:hover {
     background-color: rgba(0, 86, 179, 1);
 }
